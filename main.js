@@ -64,16 +64,6 @@ list.addEventListener('click', function (ev) {
                 for (let i = 0; i < li.length; i++) {
                     li[i].textContent = inp.value;
                 }
-                let spanDelete = document.createElement('SPAN');
-                let textSpanDelete = document.createTextNode('X');
-                spanDelete.appendChild(textSpanDelete);
-                li.appendChild(spanDelete);
-
-                let spanEdit = document.createElement('SPAN');
-                let textSpanEdit = document.createTextNode(String.fromCharCode(9998));
-                spanEdit.className = 'edit';
-                spanEdit.appendChild(textSpanEdit);
-                li.appendChild(spanEdit);
             }
         }
     }
