@@ -1,0 +1,167 @@
+* {
+    font-family:'Inconsolata', monospace;
+    font-weight: 500px;
+}
+body {
+    background-image: url(images/img1.jpg);
+}
+
+.titleList {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff ;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnAdd {
+    margin: 0 auto;
+    margin-top: 35px;
+    height: 35px;
+    width: 110px;
+    border-radius: 5px;
+    background: linear-gradient(to left, #92cfd2, #79ccf4);
+    box-shadow: 0 5px 5px gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnAdd:hover{
+    background: linear-gradient(to top, #fff, #f9eed8);
+    box-shadow: none;
+    outline: none;
+}
+
+.inputBlock {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.inputList {
+    margin: 0 auto;
+    width: 310px;
+    margin-bottom: 20px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray; 
+    outline: 0;
+    cursor: pointer;
+}
+
+.inputList:hover{
+    background: gray;
+    color: white;
+    border-radius: 3px;
+   
+}
+
+.selectList {
+    margin: 0 auto;
+    position: relative;
+    width: 324px;
+    height: 34px;
+    padding: 5px;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+}
+
+option{
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.selectList:hover{
+    background: gray;
+    color: white;
+   
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+li {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 320px;
+    height: 30px;
+    background: #fff;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.edit:hover{
+    background: #eb9bc2;
+    color: black;
+    border: 1px solid gray;
+    padding: 2px;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px gray;
+}
+
+.delete:hover{
+    background: #eb9bc2;
+    color: black;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: -4px;
+    box-shadow: 0 5px 5px gray;
+}
+
+.delete {
+    position: fixed;
+    margin-left: 220px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.edit {
+    position: fixed;
+    margin-left: 270px;
+    margin-top: -2px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.category-list li.checked {
+    color: black;
+    text-decoration: line-through;
+}
+
+.editInp{
+    position: fixed;
+    margin: 0 auto;
+    width: 200px;
+    height: 20px;
+    padding: 3px;
+    margin-left: -20px;
+    border: none;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
